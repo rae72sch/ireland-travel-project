@@ -55,13 +55,40 @@ header a {
   border-radius: 5px;
 }
 
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)),
     url("../images/footer.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px;
 }
 
 footer p {
@@ -89,6 +116,7 @@ footer a {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 .container {
@@ -98,8 +126,19 @@ section {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   gap: 64px;
+}
+
+.grid-two-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-footer {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.sligo-image {
+  max-width: 100%;
 }
 
 @media (max-width: 960px) {
@@ -117,5 +156,13 @@ section {
 
   h3 {
     font-size: 12px;
+  }
+
+  section {
+    padding: 30px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
