@@ -164,8 +164,17 @@ section.secondary {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
+
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
 }
 
 .img-card {
@@ -178,6 +187,10 @@ section.secondary {
 
 .card {
   background-color: white;
+}
+
+.card-header.grid {
+  gap: 0;
 }
 
 .card-body {
@@ -221,8 +234,17 @@ section.secondary {
   section {
     padding: 30px;
   }
+
   .grid {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
