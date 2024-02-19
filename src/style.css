@@ -187,6 +187,8 @@ section.secondary {
 
 .card {
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-header.grid {
@@ -195,6 +197,7 @@ section.secondary {
 
 .card-body {
   padding: 30px;
+  flex: 1;
 }
 
 .card-footer {
@@ -212,6 +215,7 @@ section.secondary {
   padding: 16px;
   background-color: #462cb3;
   text-decoration: none;
+  border-radius: 5px;
 }
 
 @media (max-width: 960px) {
